@@ -1,25 +1,20 @@
-from sanic import Blueprint, Sanic
-from sanic.exceptions import SanicException
-from sanic.response import json
+import uvicorn
+from fastapi import FastAPI
 from model import get_product_recommendations
 
-app = Sanic("TelemeRecsys")
+app = FastAPI()
 
 
-@app.get("/")
-async def index(request):
-    return json({"message": "Hello World"})
-
-@app.get("api/medicine/recommend", name="product_recommendation")
-async def recommender(request):
-    query = request.args.get("query")
-    limit = int(request.args.get("limit", 5))
-    recs = get_product_recommendations(query, limit)
-    if recs is None:
-        raise SanicException(status_code=500, message="Internal Server Error")
-    return json(recs)
+@app.get("/api/v1/healthcheck")
+async def root():
+    return {"message": "Hello World"}
 
 
-assert app.url_for("product_recommendation", query="eye", limit=5) == "/api/medicine/recommend?query=eye&limit=5"
+@app.get("/api/v1/medicine/recommendations")
+async def recommendations(query: str, limit: int):
+    results = get_product_recommendations(query, limit)
+    return results
 
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=1337, reload=True)

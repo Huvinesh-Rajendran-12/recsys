@@ -1,53 +1,36 @@
-import pandas as pd
-import re
-from mlx_llm.model import create_model
-from sanic import json
-from transformers import BertTokenizer
-import mlx.core as mx
-from mlx.nn import losses as loss
-import jax.numpy as jnp
-from mlx_embedding_models.embedding import EmbeddingModel
-import json
 from typing import Dict, List
-import chromadb
+from qdrant_client import QdrantClient
+from sentence_transformers import SentenceTransformer
 
-# set the chroma client
-client = chromadb.PersistentClient('./vectordb')
-
-# get collection from chromadb
-collection = client.get_collection('telemerecsys')
+client = QdrantClient(host="localhost", port=6333)
 
 # define the model name
-model_name = "bge-small"
+model_name = "BAAI/bge-m3"
 
-# clean the data
-def clean_text(text):
-    text = text.lower()
-    text = re.sub(r'[^\w\s]','',text)
-    text = re.sub(r'\s+',' ',text)
-    return text
+model = SentenceTransformer(model_name)
 
-# create the embedding model
-model = EmbeddingModel.from_registry(f"{model_name}")
 
 # define the get embeddings function
 def get_embeddings(text):
     return model.encode([text])
 
-def get_product_recommendations(query: str, limit: int):
+
+def get_product_recommendations(query: str, limit: int) -> List[Dict]:
     # get the embeddings for the query
     query_embeddings = get_embeddings(query)
-    results = collection.query(
-            query_embeddings=query_embeddings,
-            n_results=limit,
-            include=['documents', 'distances']
-        )
-
-    print(results)
-    ids = results.get('ids')
-    documents = results.get('documents')
-    distances = results.get('distances')
-    return {'ids': ids, 'recommendations' : documents, 'score': distances}
-
-
-
+    print(query_embeddings)
+    results = client.search(
+        collection_name="products",
+        query_vector=query_embeddings[0],
+        limit=limit,
+        with_payload=["name", "price"],
+    )
+    result_dict = [
+        {
+            "name": result.payload["name"],
+            "price": result.payload["price"],
+            "score": result.score,
+        }
+        for result in results
+    ]
+    return result_dict
