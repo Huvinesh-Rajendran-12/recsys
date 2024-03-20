@@ -13,6 +13,9 @@ sentence-transformers = "^2.5.1"
 uvicorn = "^0.28.0"
 fastapi = "^0.110.0"
 pandas = "^2.2.1"
+jax = "^0.4.25"
+neo4j = "^5.18.0"
+black = "^24.3.0"
 
 
 [build-system]
