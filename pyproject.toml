@@ -16,6 +16,10 @@ pandas = "^2.2.1"
 jax = "^0.4.25"
 neo4j = "^5.18.0"
 black = "^24.3.0"
+sqlalchemy = "^2.0.29"
+python-dotenv = "^1.0.1"
+psycopg-binary = "^3.1.18"
+psycopg = "^3.1.18"
 
 
 [build-system]

@@ -1,14 +1,15 @@
-from typing import Dict, List
-from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
-from neo4j import GraphDatabase
+from graph_database import Neo4jClient
+import numpy as np
+import os
 
-client = QdrantClient(host="localhost", port=6333)
+client = Neo4jClient(
+    uri="bolt://127.0.0.1:7687", username="huvi", password="huvinesh#", database="neo4j"
+)
 
-# define the model name
-model_name = "BAAI/bge-m3"
+embedding_model_path = os.environ.get("EMBEDDING_MODEL_PATH", None)
 
-model = SentenceTransformer(model_name)
+model = SentenceTransformer("mixedbread-ai/mxbai-embed-large-v1")
 
 
 # define the get embeddings function
@@ -16,43 +17,22 @@ def get_embeddings(text):
     return model.encode([text])
 
 
-def get_product_recommendations(query: str, limit: int) -> List[Dict]:
+def get_product_recommendations(query: str, limit: int, allergens: str = "None", gender: str = "Unisex"):
     # get the embeddings for the query
     query_embeddings = get_embeddings(query)
-    print(query_embeddings)
-    results = client.search(
-        collection_name="products",
-        query_vector=query_embeddings[0],
+    query_embeddings = np.array(query_embeddings[0])
+    results = client.get_product_recommendations(
+        query_embeddings=query_embeddings,
         limit=limit,
-        with_payload=["name", "price"],
+        allergens=allergens,
+        gender=gender,
+        index_vector="product_text_embeddings",
     )
-    result_dict = [
-        {
-            "name": result.payload["name"],
-            "price": result.payload["price"],
-            "score": result.score,
-        }
-        for result in results
-    ]
-    return result_dict
+    result_arr = []
+    for result in results.records:
+        result_arr.append(result.data())
+    return result_arr
 
 
-def get_product_recommendations_neo4j(query: str, limit: int) -> List[Dict]:
-    # get the embeddings for the query
-    query_embeddings = get_embeddings(query)
-    print(query_embeddings)
-    results = client.search(
-        collection_name="products",
-        query_vector=query_embeddings[0],
-        limit=limit,
-        with_payload=["name", "price"],
-    )
-    result_dict = [
-        {
-            "name": result.payload["name"],
-            "price": result.payload["price"],
-            "score": result.score,
-        }
-        for result in results
-    ]
-    return result_dict
+results = get_product_recommendations(query="I have knee pain", limit=5)
+print(results)

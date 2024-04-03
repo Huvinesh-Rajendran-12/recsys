@@ -12,27 +12,44 @@ class Neo4jClient:
         self.driver.close()
 
     def hello(self):
-        result = self.driver.execute_query("MATCH (n) RETURN n LIMIT 1")
-        print(result)
-        return result
-
-    def get_product_recommendations(self, query_embeddings: ndarray, limit: int):
-        query = """CALL db.index.vector.queryNodes(`product_text_embeddings`,
-                                                   $limit, $queryVector),
-        YIELD node AS product, score,
-                RETURN product.productCode AS productCode, product.text AS text,
-                score"""
         result = self.driver.execute_query(
-                query,
-                parameters={
-                    "queryVector": query_embeddings,
-                    "limit": limit,
-                    },
-                )
+            "CREATE(g:Greeting {greeting: 'Hello'}) return g.greeting",
+            database_=self.database,
+        )
         print(result)
         return result
 
-    def store_product_vector_embeddings(self, data: List[Dict[str, Any]], index_name: str):
+    def get_product_recommendations(
+        self,
+        query_embeddings: ndarray,
+        limit: int = 5,
+        allergens: str = "None",
+        gender: str = "Unisex",
+        index_vector: str = "product_text_embeddings",
+    ):
+        query = """CALL db.index.vector.queryNodes('product_text_embeddings',
+         $limit, $queryVector)
+        YIELD node AS product, score
+        WHERE score > 0.65
+        MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
+        (product)-[:GENDER]->(g:Gender)
+        where a.type <> $allergens and (g.type = $gender or g.type = "Unisex")
+        RETURN product.name as name,product.description as description,product.price as price, score"""
+        result = self.driver.execute_query(
+            query,
+            index_vector_name=index_vector,
+            queryVector=query_embeddings,
+            allergens=allergens,
+            gender=gender,
+            limit=limit,
+            database_=self.database,
+        )
+        print(result)
+        return result
+
+    def store_product_vector_embeddings(
+        self, data: List[Dict[str, Any]], index_name: str
+    ):
         i: int = 0
         chunk_size: int = 100
         total_size: int = len(data)
@@ -42,22 +59,23 @@ class Neo4jClient:
             rows = data[i:chunk_end]
             query = """
             UNWIND $data AS row
-            CREATE(p:Product {name: row.name, price: row.price})
-            CALL db.create.setNodeVectorProperty(p, "textEmbedding", row.textEmbedding)
-            RETURN count(n) AS propertySetCount
+            CREATE(p:Product {name: row.name, description: row.description, 
+            price: row.price})-[:HAS_ALLERGY]->(a:Allergens {type: row.allergen})
+            , (p)-[:GENDER]->(g:Gender {type: row.gender})
+            SET p.textEmbedding = row.embeddings
             """
-            self.driver.execute_query(query, parameters={"data": rows})
+            result = self.driver.execute_query(
+                query, data=rows, database_=self.database
+            )
             print("Stored {} of {} embeddings".format(i + chunk_size, total_size))
             i += chunk_size
         query_ = """
-        CREATE VECTOR INDEX $index_name IF NOT EXISTS FOR (n:Product) ON 
+        CREATE VECTOR INDEX $index_name FOR (n:Product) ON 
         (n.textEmbedding)
         OPTIONS {indexConfig: {
             `vector.dimensions`: toInteger($dim),
             `vector.similarity_function`: 'cosine'
             }}
         """
-        result = self.driver.execute_query(
-                query_, parameters={"dim": 784, "index_name": index_name}
-                )
+        result = self.driver.execute_query(query_, dim=1024, index_name=index_name)
         return result

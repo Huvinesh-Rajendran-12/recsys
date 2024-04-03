@@ -1,6 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from model import get_product_recommendations
+from database import get_user_data
 
 app = FastAPI()
 
@@ -11,8 +12,9 @@ async def root():
 
 
 @app.get("/api/v1/medicine/recommendations")
-async def recommendations(query: str, limit: int):
-    results = get_product_recommendations(query, limit)
+async def recommendations(userId: int, limit: int, allergens: str = "None", gender: str = "Unisex"):
+    (diagnosis, gender, allergy) = get_user_data(userId)
+    results = get_product_recommendations(query=diagnosis, limit=limit, allergens=allergy, gender=gender)
     return results
 
 
