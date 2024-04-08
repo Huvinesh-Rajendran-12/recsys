@@ -27,14 +27,24 @@ class Neo4jClient:
         gender: str = "Unisex",
         index_vector: str = "product_text_embeddings",
     ):
-        query = """CALL db.index.vector.queryNodes('product_text_embeddings',
-         $limit, $queryVector)
-        YIELD node AS product, score
-        WHERE score > 0.65
-        MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
-        (product)-[:GENDER]->(g:Gender)
-        where a.type <> $allergens and (g.type = $gender or g.type = "Unisex")
-        RETURN product.name as name,product.description as description,product.price as price, score"""
+        if allergens == "Not-Known":
+            query = """CALL db.index.vector.queryNodes('product_text_embeddings',
+             $limit, $queryVector)
+            YIELD node AS product, score
+            WHERE score > 0.65
+            MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
+            (product)-[:GENDER]->(g:Gender)
+            where (g.type = $gender or g.type = "Unisex")
+            RETURN product.name as name,product.description as description,product.price as price, score"""
+        else:
+            query = """CALL db.index.vector.queryNodes('product_text_embeddings',
+             $limit, $queryVector)
+            YIELD node AS product, score
+            WHERE score > 0.65
+            MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
+            (product)-[:GENDER]->(g:Gender)
+            where a.type <> $allergens and (g.type = $gender or g.type = "Unisex")
+            RETURN product.name as name,product.description as description,product.price as price, score"""
         result = self.driver.execute_query(
             query,
             index_vector_name=index_vector,

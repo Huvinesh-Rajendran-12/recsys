@@ -12,9 +12,12 @@ async def root():
 
 
 @app.get("/api/v1/medicine/recommendations")
-async def recommendations(userId: int, limit: int, allergens: str = "None", gender: str = "Unisex"):
-    (diagnosis, gender, allergy) = get_user_data(userId)
-    results = get_product_recommendations(query=diagnosis, limit=limit, allergens=allergy, gender=gender)
+async def recommendations(query: str, userId: int, limit: int, allergens: str = "None", gender: str = "Unisex"):
+    (gender, date_of_birth, allergy) = get_user_data(userId)
+    print(gender)
+    print(date_of_birth)
+    print(allergy)
+    results = get_product_recommendations(query=query, limit=limit, allergens=allergy, gender=gender)
     return results
 
 

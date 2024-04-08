@@ -32,7 +32,3 @@ def get_product_recommendations(query: str, limit: int, allergens: str = "None",
     for result in results.records:
         result_arr.append(result.data())
     return result_arr
-
-
-results = get_product_recommendations(query="I have knee pain", limit=5)
-print(results)
