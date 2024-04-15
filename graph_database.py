@@ -54,7 +54,7 @@ class Neo4jClient:
             limit=limit,
             database_=self.database,
         )
-        print(result)
+        print(len(result))
         return result
 
     def store_product_vector_embeddings(

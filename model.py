@@ -3,9 +3,7 @@ from graph_database import Neo4jClient
 import numpy as np
 import os
 
-client = Neo4jClient(
-    uri="bolt://127.0.0.1:7687", username="huvi", password="huvinesh#", database="neo4j"
-)
+client = Neo4jClient("bolt://localhost:7687", "huvi", "huvinesh#", "neo4j")
 
 embedding_model_path = os.environ.get("EMBEDDING_MODEL_PATH", None)
 
