@@ -1,9 +1,17 @@
 from sentence_transformers import SentenceTransformer
 from graph_database import Neo4jClient
 import numpy as np
+from dotenv import load_dotenv
 import os
 
-client = Neo4jClient("bolt://localhost:7687", "huvi", "huvinesh#", "neo4j")
+load_dotenv()
+
+uri = os.getenv("NEO4J_URI")
+username = os.getenv("NEO4J_USERNAME")
+password = os.getenv("NEO4J_PASS")
+database = os.getenv("NEO4J_DB")
+
+client = Neo4jClient(uri, username, password, database)
 
 embedding_model_path = os.environ.get("EMBEDDING_MODEL_PATH", None)
 
