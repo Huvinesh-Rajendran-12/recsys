@@ -28,8 +28,16 @@ def connect_to_db():
 def get_user_data(userId: int):
     """Get user data from the PostgreSQL database"""
     conn = connect_to_db()
-    user = conn.execute(text(f"SELECT id, gender, date_of_birth  FROM users WHERE id = :id"), {'id': userId}).one()
-    allergy = conn.execute(text(f"SELECT name FROM allergies  WHERE id = :id order by created_at desc limit 1"), {'id': userId}).one()
+    user = conn.execute(
+        text(f"SELECT id, gender, date_of_birth  FROM users WHERE id = :id"),
+        {"id": userId},
+    ).one()
+    allergy = conn.execute(
+        text(
+            f"SELECT name FROM allergies  WHERE id = :id order by created_at desc limit 1"
+        ),
+        {"id": userId},
+    ).one()
     gender = user[1]
     date_of_birth = user[2]
     allergy = allergy[0]

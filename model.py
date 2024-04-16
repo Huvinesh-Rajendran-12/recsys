@@ -15,7 +15,9 @@ def get_embeddings(text):
     return model.encode([text])
 
 
-def get_product_recommendations(query: str, limit: int, allergens: str = "None", gender: str = "Unisex"):
+def get_product_recommendations(
+    query: str, limit: int, allergens: str = "None", gender: str = "Unisex"
+):
     # get the embeddings for the query
     query_embeddings = get_embeddings(query)
     query_embeddings = np.array(query_embeddings[0])
