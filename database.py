@@ -37,8 +37,11 @@ def get_user_data(userId: int):
             f"SELECT name FROM allergies  WHERE id = :id order by created_at desc limit 1"
         ),
         {"id": userId},
-    ).one()
+    ).all()
     gender = user[1]
     date_of_birth = user[2]
-    allergy = allergy[0]
+    if len(allergy) == 0:
+        allergy = "Not-Known"
+    else:
+        allergy = allergy[0]
     return gender, date_of_birth, allergy

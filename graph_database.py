@@ -79,14 +79,17 @@ class Neo4jClient:
         else:
             return True
 
-    def add_product(self, name: str, description: str, price: int, allergens: str, gender: str):
+    def add_product(self, name: str, description: str, price: int, 
+                    allergens: str, gender: str, embeddings: List[float]):
         query = """
         CREATE(p:Product {name: $name, description: $description, price: $price})
         -[:HAS_ALLERGY]->(a:Allergens {type: $allergens}),
-        (p)-[:GENDER]->(g:Gender {type: $gender}) return p
+        (p)-[:GENDER]->(g:Gender {type: $gender}) set p.textEmbedding = $embeddings
+        return p
         """
         result = self.driver.execute_query(query, name=name, description=description, 
-        price=price, allergens=allergens, gender=gender, database_=self.database)
+        price=price, allergens=allergens, 
+        gender=gender, embeddings=embeddings,  database_=self.database)
         return result
 
     def store_product_vector_embeddings(

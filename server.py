@@ -1,9 +1,13 @@
+import os
+from dotenv import load_dotenv
 from fastapi.requests import Request
 import uvicorn
 from fastapi import FastAPI
 from model import get_product_recommendations, get_embeddings
 from database import get_user_data
 from graph_database import Neo4jClient
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -24,11 +28,15 @@ async def recommendations(query: str, userId: int, limit: int):
 
 @app.get("/api/v1/products")
 async def get_products():
+    username = os.getenv("NEO4J_USERNAME")
+    password = os.getenv("NEO4J_PASS")
+    uri = os.getenv("NEO4J_URI")
+    database = os.getenv("NEO4J_DB")
     client = Neo4jClient(
-        uri="bolt://127.0.0.1:7687",
-        username="huvi",
-        password="huvinesh#",
-        database="neo4j",
+        uri=uri,
+        username=username,
+        password=password,
+        database=database,
     )
     results = client.get_products()
     return results
@@ -38,11 +46,15 @@ async def get_products():
 async def add_product(
     request: Request
 ):
+    username = os.getenv("NEO4J_USERNAME")
+    password = os.getenv("NEO4J_PASS")
+    uri = os.getenv("NEO4J_URI")
+    database = os.getenv("NEO4J_DB")
     client = Neo4jClient(
-        uri="bolt://127.0.0.1:7687",
-        username="huvi",
-        password="huvinesh#",
-        database="neo4j",
+        uri=uri,
+        username=username,
+        password=password,
+        database=database,
     )
     prod_data = await request.json()
     print(prod_data)
@@ -51,8 +63,9 @@ async def add_product(
     price = prod_data["price"]
     allergens = prod_data["allergens"]
     gender = prod_data["gender"]
+    embeddings = get_embeddings(description)
     result = client.add_product(
-        name=name, description=description, price=price, allergens=allergens, gender=gender
+        name=name, description=description, price=price, allergens=allergens, gender=gender, embeddings=embeddings
     )
     result_arr = []
     for result in result.records:
