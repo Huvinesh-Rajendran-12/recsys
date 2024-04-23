@@ -47,7 +47,7 @@ class Neo4jClient:
             MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
             (product)-[:GENDER]->(g:Gender)
             where (g.type = $gender or g.type = "Unisex")
-            RETURN product.name as name,product.description as description,product.price as price, score"""
+            RETURN distinct product.id as id, product.name as name,product.description as description,product.price as price, score"""
         else:
             query = """CALL db.index.vector.queryNodes('product_text_embeddings',
              $limit, $queryVector)
@@ -109,6 +109,22 @@ class Neo4jClient:
         gender=gender, database_=self.database)
         return result
 
+    def create_product_index_constraint(self):
+        query = """
+        CREATE CONSTRAINT product_id IF NOT EXISTS FOR  (p:Product) REQUIRE p.id IS UNIQUE
+        """
+        result = self.driver.execute_query(query, database_=self.database)
+        return result
+
+    def create_product_index(self):
+        query="""
+        MERGE (i:Index {name: 'product_index'})
+        ON CREATE SET i.value = 0
+        RETURN i
+        """
+        result = self.driver.execute_query(query, database_=self.database)
+        return result
+
     def store_product_vector_embeddings(
             self, data: List[Dict[str, Any]], index_name: str, 
             embedding_dim: int = 1024
@@ -116,6 +132,8 @@ class Neo4jClient:
         i: int = 0
         chunk_size: int = 100
         total_size: int = len(data)
+        self.create_product_index()
+        self.create_product_index_constraint()
         print("Total embeddings: {}".format(total_size))
         while i < total_size:
             chunk_end = min(i + chunk_size, total_size)
@@ -131,7 +149,7 @@ class Neo4jClient:
             """
             self.driver.execute_query(query, data=rows, database_=self.database)
             print("Stored {} of {} embeddings".format(i + chunk_size, total_size))
-            i += 1
+            i += chunk_size
         is_index_exists = self.check_vector_index_exists(index_name)
         if is_index_exists is False:
             query_ = """
