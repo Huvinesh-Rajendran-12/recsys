@@ -23,6 +23,11 @@ print("=== Loading the product data ===")
 df = pd.read_csv("./Data/guardian_fake_data.csv")
 print("=== Data loaded ===")
 
+# check if 'price' column has any null values and replace with MYR 0.0
+if df["price"].isnull().any():
+    print("=== Replacing null values in 'price' column with MYR 0.0 ===")
+    df["price"].fillna("MYR 0.0", inplace=True)
+
 
 # clean the data
 def clean_text(text):

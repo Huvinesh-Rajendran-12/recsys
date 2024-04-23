@@ -28,10 +28,12 @@ def connect_to_db():
 def get_user_data(userId: int):
     """Get user data from the PostgreSQL database"""
     conn = connect_to_db()
+    print(conn)
     user = conn.execute(
         text(f"SELECT id, gender, date_of_birth  FROM users WHERE id = :id"),
         {"id": userId},
     ).one()
+    print(user)
     allergy = conn.execute(
         text(
             f"SELECT name FROM allergies  WHERE id = :id order by created_at desc limit 1"
@@ -43,5 +45,6 @@ def get_user_data(userId: int):
     if len(allergy) == 0:
         allergy = "Not-Known"
     else:
-        allergy = allergy[0]
+        allergy = allergy[0][0]
+    print(allergy)
     return gender, date_of_birth, allergy

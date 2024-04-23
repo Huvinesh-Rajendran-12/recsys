@@ -21,9 +21,9 @@ class Neo4jClient:
 
     def get_products(self):
         result = self.driver.execute_query(
-            """MATCH (p:Product), (p)-->(a:Allergens), (p)-->(g:Gender)
-                RETURN p.name as name,p.description as description,p.price as
-                price, a.type as allergens, g.type as gender""",
+                """MATCH (p:Product), (p)-->(a:Allergens), (p)-->(g:Gender)
+                RETURN distinct p.id as id, p.name as name,p.description as description,p.price as
+                price, a.type as allergens, g.type as gender order by p.id DESC""",
             database_=self.database,
         )
         result_arr = []
@@ -79,17 +79,34 @@ class Neo4jClient:
         else:
             return True
 
-    def add_product(self, name: str, description: str, price: int, 
+    def add_product(self, name: str, description: str, price: str, 
                     allergens: str, gender: str, embeddings: List[float]):
         query = """
-        CREATE(p:Product {name: $name, description: $description, price: $price})
-        -[:HAS_ALLERGY]->(a:Allergens {type: $allergens}),
+        MATCH(i:Index {name: "product_index"})
+        SET i.value = i.value + 1
+        CREATE(p:Product {id: i.value, name: $name, description: $description, price: $price}),
+        (p)-[:HAS_ALLERGY]->(a:Allergens {type: $allergens}),
         (p)-[:GENDER]->(g:Gender {type: $gender}) set p.textEmbedding = $embeddings
-        return p
+        return p.id as id
         """
         result = self.driver.execute_query(query, name=name, description=description, 
         price=price, allergens=allergens, 
-        gender=gender, embeddings=embeddings,  database_=self.database)
+        gender=gender, embeddings=embeddings[0],  database_=self.database)
+        return result
+
+    def edit_product(self, id: int, name: str, description: str, price: str, 
+                     allergens: str, gender: str, embeddings: List[float]):
+        query = """
+        MATCH (p:Product {id: $id}), (p)-->(a:Allergens), (p)-->(g:Gender)
+        SET p.name = $name, p.description = $description, p.price = $price,
+        p.textEmbedding = $embeddings,
+        a.type = $allergens, g.type = $gender
+        return distinct p.id as id
+        """
+        result = self.driver.execute_query(query, id=id, name=name, 
+                                           description=description, price=price,
+                                           embeddings=embeddings[0], allergens=allergens,
+        gender=gender, database_=self.database)
         return result
 
     def store_product_vector_embeddings(
@@ -105,7 +122,9 @@ class Neo4jClient:
             rows = data[i:chunk_end]
             query = """
             UNWIND $data AS row
-            CREATE(p:Product {name: row.name, description: row.description, 
+            MATCH(i:Index {name: 'product_index'})
+            SET i.value = row.id
+            CREATE(p:Product {id: row.id, name: row.name, description: row.description, 
             price: row.price})-[:HAS_ALLERGY]->(a:Allergens {type: row.allergens})
             , (p)-[:GENDER]->(g:Gender {type: row.gender})
             SET p.textEmbedding = row.embeddings

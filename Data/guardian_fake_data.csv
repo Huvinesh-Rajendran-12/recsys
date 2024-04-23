@@ -1,200 +1,139 @@
-name,description,allergen,gender,price
-[Bundle of 2] **Bausch + Lomb Renu Sensitive Multi-Purpose Solution 355mlx2 (2x121078505),Multi-purpose solution for sensitive eyes.,Not-Known,Unisex,MYR 55.00
-[Bundle of 6] Glucerna Chocolate 800g (2x121107369),Nutritional supplement for diabetic patients.,Not-Known,Unisex,MYR 768.00
-[Bundle of 6] Glucerna Triple Care Vanilla 800g (6x121088392),Nutritional supplement for diabetic patients.,Not-Known,Unisex,MYR 768.00
-[Bundle of 6] Glucerna Wheat 800g (2x121109311),Nutritional supplement for diabetic patients.,Wheat,Unisex,MYR 768.00
-[Bundle of 2] Bausch + Lomb Renu Fresh Multi-Purpose Solution 355ml x 3 (2x121078472),Multi-purpose solution for contact lenses.,Not-Known,Unisex,MYR 78.00
-[Bundle of 3] Anlene Total 10 800g (3x121116212),Calcium supplement for bone health.,Dairy,Unisex,MYR 158.00
-[Bundle of 6] Ensure Gold Wheat 800g (6x121101501),Nutritional supplement for elderly individuals.,Wheat,Unisex,MYR 618.00
-[Bundle of 6] Ensure Gold Vanilla 800g (6x121101500),Nutritional supplement for elderly individuals.,Dairy,Unisex,MYR 618.00
-Thomson Probigut Kombucha Berries Powder 2G X 30 Sachets,Probiotic supplement for gut health.,Not-Known,Unisex,MYR 250.00
-Anlene Actifit 3X 600G,Calcium supplement for bone health.,Dairy,Unisex,MYR 21.50
-Anmum Materna Choc 650G,Maternal milk powder.,Dairy,Female,MYR 42.40
-Anmum Materna Plain 650G,Maternal milk powder.,Dairy,Female,MYR 42.40
-Anmumlac Infant Formula Step 2 600G,Infant formula for stage 2.,Dairy,Unisex,MYR 70.60
-Anmumlac Infant Formula Step 1 600G,Infant formula for stage 1.,Dairy,Unisex,MYR 76.90
-Woods Pepperrmint Lozenges Sugar Free Lemon 12G,Sugar-free throat lozenges.,Not-Known,Unisex,MYR 2.50
-Ecolite Cny Bird'S Nest With White Fungus & Ginseng 70ml X 6'S,Nutritional supplement with bird's nest white fungus and ginseng.,Not-Known,Unisex,MYR 78.00
-Dr Med Ventilated Lo With Side Cross Strap Waist Support Xl,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
-Dr Med Ventilated Lo With Side Cross Strap Waist Support L,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
-Dr Med Ventilated Lo With Side Cross Strap Waist Support M,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
-Dr Med Ventilated Lo With Side Cross Strap Waist Support S,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
-Dr Med Arm Sling Adult,Arm sling for adults.,Not-Known,Unisex,MYR 27.50
-Dr Med Posture Corrective Control Support Mild L,Posture corrective support.,Not-Known,Unisex,MYR 110.80
-Kplass Knee Pain Relief Patch 2Sx12,Patch for knee pain relief.,Not-Known,Unisex,MYR 238.80
-Kplass Pain Relief Patch 2Sx12,Patch for general pain relief.,Not-Known,Unisex,MYR 202.80
-Salonpas Fda Large Plaster 3S,Large plaster for pain relief.,Not-Known,Unisex,MYR 17.82
-Optimum Nutrition Think Bar Lemon Delight 60G X 10PK,Nutritional bar with lemon flavor.,Not-Known,Unisex,MYR 129.00
-Optimum Nutrition Think Bar Chocolate Fudge 60G X 10PK,Nutritional bar with chocolate flavor.,Not-Known,Unisex,MYR 129.00
-Optimum Nutrition Serious Mass Choc 2.72Kg,Weight gainer supplement with chocolate flavor.,Dairy,Unisex,MYR 209.00
-Optimum Nutrition 100% Whey Gold Standard Choc 454G,Whey protein supplement with chocolate flavor.,Dairy,Unisex,MYR 119.00
-Optimum Nutrition 100% Whey Gold Standard Choc 907G,Whey protein supplement with chocolate flavor.,Dairy,Unisex,MYR 189.00
-Optimum Nutrition Creatine 300G,Creatine supplement.,Not-Known,Unisex,MYR 129.00
-Cebion Immucombi Tablets 30S,Immune support tablets with vitamin C.,Not-Known,Unisex,MYR 63.80
-Neurobion Value Pack 60Sx2,Vitamin B complex supplement.,Not-Known,Unisex,MYR 95.90
-Solusolv Haemorrhoids Relief 40,Relief for hemorrhoids.,Not-Known,Unisex,MYR 51.00
-Solusolv Haemorrhoids Relief 40Sx2,Relief for hemorrhoids.,Not-Known,Unisex,MYR 82.50
-Clearogout 30Sx2 Free 15S,Relief for gout.,Not-Known,Unisex,MYR 56.00
-Sambucol Black Elderberry Original 120mlx2 Foc Gwp,Elderberry supplement.,Not-Known,Unisex,MYR 114.21
-Holistic Way Children'S Eye Lutein Gummy 90S,Eye health supplement for children in gummy form.,Not-Known,Children,MYR 92.65
-Holistic Way Children'S Omega 3 Gummy 90S,Omega-3 supplement for children in gummy form.,Not-Known,Children,MYR 92.65
-Holistic Way Children'S Calcium & D3 Gummy 90S,Calcium and vitamin D supplement for children in gummy form.,Not-Known,Children,MYR 92.65
-Holistic Way Children'S Vitamin C & Zinc Gummy 90S,Vitamin C and zinc supplement for children in gummy form.,Not-Known,Children,MYR 92.65
-Shooot 3In1 Condom 3Pcs,Condom with 3-in-1 features.,Not-Known,Unisex,MYR 6.84
-Shooot Ribbed Condom 3Pcs,Ribbed condom for enhanced pleasure.,Not-Known,Unisex,MYR 5.76
-Shooot Dotted Condom 3Pcs,Dotted condom for enhanced sensation.,Not-Known,Unisex,MYR 5.76
-Shooot Basic Condom 3Pcs,Basic condom for safe sex.,Not-Known,Unisex,MYR 4.14
-"Kinohimitsu Premium Abalone Gift Set (Abalone With Truffle 180G X 2'S, Abalone With Scallop 425G X 2’S, Bjow 425G X 1'S)",Premium abalone gift set.,Shellfish,Unisex,MYR 198.00
-BRAND'S® CNY Essence of Chicken with Cordycep Gift Pack 12 x 70g + 1 x 70g,Essence of chicken with cordyceps gift pack.,Not-Known,Unisex,MYR 81.80
-Nugevity Complete Plant-Based Protein 7 Sachets,Plant-based protein supplement.,Not-Known,Unisex,MYR 103.92
-Nugevity Complete Plant-Based Protein 681G,Plant-based protein supplement.,Not-Known,Unisex,MYR 215.92
-Vellgoood Flexi Goood Orange + Turmeric + Pomegranet 2G X 15 Sachets,Orange turmeric and pomegranate beverage mix.,Not-Known,Unisex,MYR 76.50
-Vellgoood Digex Goood Beverage Apple + Probiotic 2G X 15 Sachets,Apple-flavored beverage with probiotics.,Not-Known,Unisex,MYR 76.50
-Vellgoood Screen-I-Shield Lutein + Zexanthin 2G X 15 Sachtes,Lutein and zeaxanthin supplement.,Not-Known,Unisex,MYR 76.50
-Vellgoood Junior Optifriends Marigold + Vit A 2G X 15 Sachets,Marigold and vitamin A supplement for children.,Not-Known,Children,MYR 63.75
-Vellgoood Junior Kold-Kare Vit C + Elderberry 20G X 15 Sachets,Vitamin C and elderberry supplement for children.,Not-Known,Children,MYR 63.75
-Vellgoood Junior Respiragoood Vit C + Tiger Mushroom 2G X 15 Sachets,Vitamin C and tiger mushroom supplement for children.,Not-Known,Children,MYR 63.75
-Holistic Way Multi Vitamins Gummies 60S,Multi-vitamin gummies for adults.,Not-Known,Unisex,MYR 92.65
-Holistic Way Vitamin D3 400Iu Gummies 60S,Vitamin D3 supplement in gummy form.,Not-Known,Unisex,MYR 92.65
-Holistic Way Elderbery Immune Gummies 60S,Elderberry immune support gummies.,Not-Known,Unisex,MYR 92.65
-Holistic Way Collagen Radiant Gummies 60S,Collagen supplement in gummy form.,Not-Known,Unisex,MYR 109.00
-Holistic Way Apple Cider Vinegar Gummies 60S,Apple cider vinegar supplement in gummy form.,Not-Known,Unisex,MYR 92.65
-Dr. Scholl'S Pain Relief Orthotics For Knee Pain Men Sizes 8-14 2S,Orthotic insoles for knee pain relief (for men).,Not-Known,Male,MYR 116.91
-Vitahealth Livo Tonic 90S,Liver tonic supplement.,Not-Known,Unisex,MYR 112.42
-Vitahealth Eye-Care 90S,Eye health supplement.,Not-Known,Unisex,MYR 126.75
-"Vitahealth Omega 3,6,9 150S",Omega 3 6 9 supplement.,Not-Known,Unisex,MYR 110.92
-Contour Plus Elite Blood Glucose Monitoring + 25 Strips,Blood glucose monitoring device with 25 strips.,Not-Known,Unisex,MYR 90.00
-Waitemata Manuka Honey Umf 15+ 250G,Manuka honey with UMF 15+ rating.,Not-Known,Unisex,MYR 203.15
-Live-Well Mecomin 90S,Vitamin B supplement.,Not-Known,Unisex,MYR 54.75
-Kinohimitsu Beauty Special Box Set 2,Beauty supplement box set.,Not-Known,Unisex,MYR 139.00
-Biogreen O'Kid Cocoa Oatmilk 850G,Cocoa oatmilk for kids.,Gluten (Oats),Children,MYR 69.90
-Biogreen Pac37 Whole Dried Cranberries 170G,Whole dried cranberries.,Not-Known,Unisex,MYR 15.80
-21St Century Turmeric 50S,Turmeric supplement.,Not-Known,Unisex,MYR 30.12
-21St Century Vegesamine 500Mg 120S,Vegetarian glucosamine supplement.,Not-Known,Unisex,MYR 87.44
-21St Century Kidchewy Dha Pastillies 45S,DHA pastilles for kids.,Fish,Children,MYR 18.84
-21St Century Vegesamine 500Mg 30S,Vegetarian glucosamine supplement.,Not-Known,Unisex,MYR 26.36
-21St Century Spirulina 1000Mg 120S,Spirulina supplement.,Not-Known,Unisex,MYR 60.32
-21St Century Fabuloss 5 60S,Weight management supplement.,Not-Known,Unisex,MYR 39.96
-21St Century Herbal Lipo Tea Honey Lemon Flavour 24S,Herbal tea for weight management (honey lemon flavor).,Not-Known,Unisex,MYR 37.70
-21St Century Herbal Lipo Tea Natural Flavour 24S,Herbal tea for weight management (natural flavor).,Not-Known,Unisex,MYR 37.70
-21St Century Co-Enzyme Q10 30Mg 30S,Coenzyme Q10 supplement.,Not-Known,Unisex,MYR 23.96
-21St Century Cal Mag Zinc 120S,Calcium magnesium and zinc supplement.,Not-Known,Unisex,MYR 41.84
-21St Century Maxi Cal 180S,Calcium supplement.,Not-Known,Unisex,MYR 43.00
-21St Century Royal Propollen 30S,Royal propolis supplement.,Not-Known,Unisex,MYR 22.60
-Benourish Superfood Rosy Glow 300G,Superfood blend for skin radiance.,Not-Known,Unisex,MYR 28.71
-YUE HON TONG Ba Xian Guo Chewable Candy,Ba Xian Guo chewable candy.,Not-Known,Unisex,MYR 4.88
-YUE HON TONG Kumquat Lemon Throat Drops,Kumquat lemon throat drops.,Not-Known,Unisex,MYR 3.40
-YUE HON TONG Kumquat Lemon Throat Drops,Kumquat lemon throat drops.,Not-Known,Unisex,MYR 3.40
-Brand's Essence of Chicken 70g x 30's (Assorted Packaging),Essence of chicken supplement (assorted packaging).,Not-Known,Unisex,MYR 140.00
-Guardian Ovulation Test 5S (Cn),Ovulation test kit (5 strips).,Not-Known,Unisex,MYR 49.80
-Guardian Ovulation Test 1S (Cn),Ovulation test kit (1 strip).,Not-Known,Unisex,MYR 13.90
-Vicks Inhaler 0.5ml,Nasal inhaler for congestion relief.,Not-Known,Unisex,MYR 6.50
-Durex Fetherlite Condom 3's,Condoms (fetherlite),Latex,Unisex,MYR 13.40
-Brand's Innershine Prune Essence 42ml x 6's,Prune essence supplement (6 bottles).,Not-Known,Unisex,MYR 28.90
-Hansaplast Universal Water Resistant 10's,Water-resistant adhesive bandages.,Not-Known,Unisex,MYR 2.16
-Optrex Eye Lotion 110ml,Eye lotion for relief of dry and irritated eyes.,Not-Known,Unisex,MYR 21.90
-Kwan Loong Medicated Oil 28ml,Medicated oil for pain relief.,Not-Known,Unisex,MYR 9.45
-Tiger balm 10g,Topical ointment for pain relief.,Not-Known,Unisex,MYR 5.10
-Esentiel Epsom Salts Granules Food Grade 375g,Epsom salts granules for various uses.,Not-Known,Unisex,MYR 8.35
-Bio-Life Saw Palmetto & Pumpkin Seed 100's x 2 + 30's,Saw palmetto and pumpkin seed supplement.,Not-Known,Unisex,MYR 211.90
-Kwan Loong Medicated Oil 15ml,Medicated oil for pain relief.,Not-Known,Unisex,MYR 5.85
-Salonpas Patch Large 2s,Pain relief patch (large).,Not-Known,Unisex,MYR 5.58
-Durex Extra Safe Condom 3's,Condoms (extra safe),Latex,Unisex,MYR 13.40
-Vicks VapoRub 25g,Topical ointment for congestion relief.,Not-Known,Unisex,MYR 8.90
-Flavettes 250mg Orange 60 Tablets,Orange-flavored vitamin C tablets.,Not-Known,Unisex,MYR 19.92
-Champs C 100Mg Blackcurrant 100’Sx2,Blackcurrant-flavored vitamin C tablets.,Not-Known,Unisex,MYR 41.90
-Hansaplast Extra Tough 16's,Extra tough adhesive bandages.,Not-Known,Unisex,MYR 12.33
-SCOTT'S Vitamin C Pastilles Peach 50S For Kids,Peach-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 18.90
-Tiger Balm Plaster Warm 2s L,Warm tiger balm plaster (large).,Not-Known,Unisex,MYR 6.54
-Kinohimitsu Collagen Diamond 50ml x 6's,Collagen supplement.,Not-Known,Unisex,MYR 50.12
-Optrex Eye Drops 10ml,Eye drops for relief of dry and irritated eyes.,Not-Known,Unisex,MYR 9.81
-Hudsons Eumenthol Honey Lemon 50g,Honey lemon lozenges with eucalyptus.,Not-Known,Unisex,MYR 9.45
-Kinohimitsu J'pan ProWhite Regimen (UV Bright 50ml x 16's + ProWhite 16's,ProWhite regimen for skin whitening.,Not-Known,Unisex,MYR 169.00
-Thomson Livrin 300mg 30's (Buy 1 Free 1 - On Pack),Livrin supplement for liver health.,Not-Known,Unisex,MYR 86.64
-Brand's Innershine Prune Essence 42ml x 12's,Prune essence supplement (12 bottles).,Not-Known,Unisex,MYR 49.44
-Thomson Activated Ginkgo 40mg 30's (Buy 1 Free 1 on-pack),Activated ginkgo supplement for cognitive function.,Not-Known,Unisex,MYR 92.00
-CareSens™ Glucose Test Strip 25's (Twin Pack),Glucose test strips for blood sugar monitoring.,Not-Known,Unisex,MYR 89.84
-ALCON Systane Ultra Lubricant Eye Drops 5ml,Eye drops for relief of dry eyes.,Not-Known,Unisex,MYR 17.10
-Biogreen Raw Honey 1kg,Raw honey for various uses.,Not-Known,Unisex,MYR 44.50
-BiO-LiFE MultiVitamins 100s x2,Multi-vitamin supplement.,Not-Known,Unisex,MYR 87.50
-Yht Herbal Cough Syrup (Pei Pa Koa) Medium Bottle 150ml,Herbal cough syrup (Pei Pa Koa).,Not-Known,Unisex,MYR 9.90
-Bausch + Lomb Renu Fresh Multi-Purpose Solution 355ml x 3,Contact lens solution.,Not-Known,Unisex,MYR 38.90
-Tiger Balm White 30g,Topical ointment for pain relief.,Not-Known,Unisex,MYR 10.96
-KY Jelly Lubricant 100g,Personal lubricant.,Not-Known,Unisex,MYR 18.10
-Uphamol 500 18x10's,Paracetamol tablets.,Paracetamol,Unisex,MYR 45.00
-Bye-Bye Fever Children 6s + 2s,Children's fever relief medication.,Paracetamol,Children,MYR 17.33
-Durex Together 3s,Condoms (together),Latex,Unisex,MYR 7.80
-NH Detoxlim Plus 60's,Detox supplement.,Not-Known,Unisex,MYR 45.80
-Counterpain 120g,Pain relief cream.,Not-Known,Unisex,MYR 24.75
-UPHAMOL 500mg 2 x 10's,Paracetamol tablets.,Paracetamol,Unisex,MYR 4.90
-Flavettes 500mg Orange 60 Tablets,Orange-flavored vitamin C tablets.,Not-Known,Unisex,MYR 33.20
-Kinohimitsu Snow Lotus Bird Nest 75ml x 6's (Assorted Packaging),Bird's nest drink.,Not-Known,Unisex,MYR 42.90
-Hansaplast Disney Frozen II 20's,Disney Frozen II-themed adhesive bandages.,Not-Known,Children,MYR 8.01
-Hansaplast Disney Princess 20's,Disney Princess-themed adhesive bandages.,Not-Known,Children,MYR 8.01
-Sterimar Microspray Nasal Hygiene 50ml,Nasal hygiene spray.,Not-Known,Unisex,MYR 29.61
-Hurix's 600 Flu Cough Syrup 100ml,Flu cough syrup.,Not-Known,Unisex,MYR 18.80
-Strepsils Honey-Lemon 6's,Honey-lemon flavored lozenges for sore throat.,Not-Known,Unisex,MYR 5.08
-Kinohimitsu D'tox Tea Peppermint 2gx60's,Peppermint detox tea.,Not-Known,Unisex,MYR 49.90
-Tiger Balm Plaster Warm 2s S,Warm tiger balm plaster (small).,Not-Known,Unisex,MYR 4.42
-Counterpain 60g,Pain relief cream.,Not-Known,Unisex,MYR 15.12
-BiO-LiFE AB Junior Pre & Pro 50s,Probiotic supplement for children.,Not-Known,Children,MYR 132.00
-Hudson's Eumenthol Jujubes 50g Classic,Eucalyptus jujubes.,Not-Known,Unisex,MYR 9.45
-Kinohimitsu J'pan D'tox Plum 6s + D'tox Tea Peppermint 14s,Plum detox drink with peppermint tea.,Not-Known,Unisex,MYR 58.90
-Royal Bird Nest With Collagen 75ml x 6s,Bird nest drink with collagen.,Not-Known,Unisex,MYR 36.00
-Nixoderm Ointment 5.34g,Ointment for skin conditions.,Not-Known,Unisex,MYR 8.50
-Salonpas Patch 20 x10s,Pain relief patches.,Not-Known,Unisex,MYR 123.50
-Hurix's Cream For Mouth Ulcer 5g,Cream for mouth ulcers.,Not-Known,Unisex,MYR 14.31
-Nixoderm Ointment 17.7g,Ointment for skin conditions.,Not-Known,Unisex,MYR 15.75
-Bausch + Lomb Renu Sensitive Multi-Purpose Solution 355mlx2,Contact lens solution.,Not-Known,Unisex,MYR 35.91
-Durex Play 100ml,Personal lubricant.,Not-Known,Unisex,MYR 22.32
-Tiger Balm Mosquito Repellent Patch 10s,Mosquito repellent patches.,Not-Known,Unisex,MYR 15.21
-Microlife Non-Contact Forehead Thermometer FR1DZ1,Non-contact thermometer.,Not-Known,Unisex,MYR 199.00
-Dettol Personal Care Wipes Sensitive 10's Pack Of 3,Personal care wipes.,Not-Known,Unisex,MYR 10.80
-Perskindol Classic Spray 150ml,Pain relief spray.,Not-Known,Unisex,MYR 25.91
-Tiger balm 4g,Topical ointment for pain relief.,Not-Known,Unisex,MYR 2.55
-Durex Love Condom 3's,Condoms (love),Latex,Unisex,MYR 7.80
-Tiger Balm Plaster Cool 2s S,Cool tiger balm plaster (small).,Not-Known,Unisex,MYR 4.25
-ALCON OPTI-FREE Pure Moist 90ml,Contact lens solution.,Not-Known,Unisex,MYR 13.99
-Benourish Elderflora Black Elderberry Extract 15S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
-Benourish Elderimuno Black Elderberry Extract 20S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
-Benourish Eldervisio Black Elderberry Extract 20S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
-Guardian Crepe Elastic Bandage 7.5Cm,Elastic bandage.,Not-Known,Unisex,MYR 6.50
-Guardian Crepeelastic Bandage 5Cm,Elastic bandage.,Not-Known,Unisex,MYR 4.90
-SCOTT'S Vitamin C Pastilles Mango 50S For Kids,Mango-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 18.90
-Strepsils Chesty Cough 8's,Cough relief lozenges.,Not-Known,Unisex,MYR 7.65
-Durex Extra Safe Condom 12's,Condoms (extra safe),Latex,Unisex,MYR 43.20
-Durex Fetherlite Condom 12's,Condoms (fetherlite),Latex,Unisex,MYR 43.20
-Flavettes Vitamin C Blackcurrant 250mg 60 Tablets,Blackcurrant-flavored vitamin C tablets.,Not-Known,Unisex,MYR 17.40
-Appeton Multivitamin Lysine 60's,Multivitamin supplement.,Not-Known,Unisex,MYR 55.89
-Appeton A-Z Kid's Vitamin C 30mg Orange 100's,Orange-flavored vitamin C tablets for kids.,Not-Known,Children,MYR 29.88
-BiO-LiFE Astaxanthin 6mg 30'S,Astaxanthin supplement.,Not-Known,Unisex,MYR 84.50
-SCOTT'S Vitamin C Pastilles Orange 15S For Kids,Orange-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
-SCOTT'S Vitamin C Pastilles Peach 15S For Kids,Peach-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
-Appeton Active-C 100mg Orange 60's,Orange-flavored vitamin C tablets.,Not-Known,Unisex,MYR 35.73
-Guardian Ovulation Test 5's (Us),Ovulation test kit.,Not-Known,Unisex,MYR 30.60
-Appeton Multivitamin Lysine Syrup 120ml,Multivitamin syrup with lysine.,Not-Known,Unisex,MYR 53.77
-Strepsils Max 16s,Sore throat relief lozenges.,Not-Known,Unisex,MYR 11.90
-Hurix's Phlegm & Cough Herbs Capsule 12X6's,Cough relief capsules.,Not-Known,Unisex,MYR 85.30
-GoodMorning Vplus 18 Grains 1kg,Multigrain beverage mix.,Not-Known,Unisex,MYR 69.90
-CENTRUM Silver Multivitamin Multimineral Supplement 100SX2 Adults 50+,Multivitamin supplement for adults over 50.,Not-Known,Unisex,MYR 139.90
-Kinohimitsu D'tox Tea Ginger 2gx60's,Ginger detox tea.,Not-Known,Unisex,MYR 49.90
-NH Detoxlim Natural Clenx Tea 3g x 120's,Natural detox tea.,Not-Known,Unisex,MYR 94.80
-Hurix’s Constipation Tablet 12X12's,Constipation relief tablets.,Not-Known,Unisex,MYR 96.12
-SCOTT'S Vitamin C Pastilles Mixed Berries 15S For Kids,Mixed berries-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
-Appeton A-Z Kid's Vitamin C Pastilles 20x5's,Orange-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 26.82
-Guardian Adult Under Pad 75x75cm 10's,Disposable under pad.,Not-Known,Unisex,MYR 15.90
-3M Nexcare Micropore Tape 1/2in x 5yd,Medical tape.,Not-Known,Unisex,MYR 3.42
-Kangaroo Brand Eucalyptus Oil 56ml,Eucalyptus oil.,Not-Known,Unisex,MYR 14.31
-3Legs Medicinal Powder 12s,Medicinal powder.,Not-Known,Unisex,MYR 5.40
-Kordel's Kid's C 250mg + Bioflavonoids 30 Tablets,Vitamin C with bioflavonoids for kids.,Not-Known,Children,MYR 30.90
-Beauxlim Lemon Mix Fibre 15's (Pack of 2),Lemon-flavored dietary fiber supplement.,Not-Known,Unisex,MYR 98.00
-SCOTT'S Vitamin C Pastilles Mango 15S For Kids,Mango-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
-Kinohimitsu J'pan Health Pad 10's + 10's,Detox foot pads.,Not-Known,Unisex,MYR 60.84
-Dequadin Citrus Lozenges Tube 24's,Citrus-flavored throat lozenges.,Not-Known,Unisex,MYR 9.18
-Total Image Collagen Plus 60 x2 +10s,Collagen supplement.,Not-Known,Unisex,MYR 229.38
-GoodMorning VGrains 1kg,Grain beverage mix.,Not-Known,Unisex,MYR 59.00
-Rohto Extra Cool Eye Drops 13ml,Cooling eye drops.,Not-Known,Unisex,MYR 17.55
-Lifebuoy Pink Clay Bodywash 850ml,Pink clay body wash.,Not-Known,Unisex,MYR 9.54
-Lifebuoy Sea Mineral Bodywash 850ml,Sea mineral body wash.,Not-Known,Unisex,MYR 9.54
-Kinohimitsu Royal Black 1Kg,Blackseed oil supplement.,Not-Known,Unisex,MYR 66.90
-Lifebuoy Charcoal and Mint Body Wash Refill 850ml,Charcoal and mint body wash refill.,Not-Known,Unisex,MYR 9.54
+id,name,description,allergens,gender,price
+1,[Bundle of 2] **Bausch + Lomb Renu Sensitive Multi-Purpose Solution 355mlx2 (2x121078505),Multi-purpose solution for sensitive eyes.,Not-Known,Unisex,MYR 55.00
+2,[Bundle of 6] Glucerna Chocolate 800g (2x121107369),Nutritional supplement for diabetic patients.,Not-Known,Unisex,MYR 768.00
+3,[Bundle of 6] Glucerna Triple Care Vanilla 800g (6x121088392),Nutritional supplement for diabetic patients.,Not-Known,Unisex,MYR 768.00
+4,[Bundle of 6] Glucerna Wheat 800g (2x121109311),Nutritional supplement for diabetic patients.,Wheat,Unisex,MYR 768.00
+5,[Bundle of 2] Bausch + Lomb Renu Fresh Multi-Purpose Solution 355ml x 3 (2x121078472),Multi-purpose solution for contact lenses.,Not-Known,Unisex,MYR 78.00
+6,[Bundle of 3] Anlene Total 10 800g (3x121116212),Calcium supplement for bone health.,Dairy,Unisex,MYR 158.00
+7,[Bundle of 6] Ensure Gold Wheat 800g (6x121101501),Nutritional supplement for elderly individuals.,Wheat,Unisex,MYR 618.00
+8,[Bundle of 6] Ensure Gold Vanilla 800g (6x121101500),Nutritional supplement for elderly individuals.,Dairy,Unisex,MYR 618.00
+9,Thomson Probigut Kombucha Berries Powder 2G X 30 Sachets,Probiotic supplement for gut health.,Not-Known,Unisex,MYR 250.00
+10,Anlene Actifit 3X 600G,Calcium supplement for bone health.,Dairy,Unisex,MYR 21.50
+11,Anmum Materna Choc 650G,Maternal milk powder.,Dairy,Female,MYR 42.40
+12,Anmum Materna Plain 650G,Maternal milk powder.,Dairy,Female,MYR 42.40
+13,Anmumlac Infant Formula Step 2 600G,Infant formula for stage 2.,Dairy,Unisex,MYR 70.60
+14,Anmumlac Infant Formula Step 1 600G,Infant formula for stage 1.,Dairy,Unisex,MYR 76.90
+15,Woods Pepperrmint Lozenges Sugar Free Lemon 12G,Sugar-free throat lozenges.,Not-Known,Unisex,MYR 2.50
+16,Ecolite Cny Bird'S Nest With White Fungus & Ginseng 70ml X 6'S,Nutritional supplement with bird's nest white fungus and ginseng.,Not-Known,Unisex,MYR 78.00
+17,Dr Med Ventilated Lo With Side Cross Strap Waist Support Xl,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
+18,Dr Med Ventilated Lo With Side Cross Strap Waist Support L,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
+19,Dr Med Ventilated Lo With Side Cross Strap Waist Support M,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
+20,Dr Med Ventilated Lo With Side Cross Strap Waist Support S,Ventilated waist support.,Not-Known,Unisex,MYR 116.90
+21,Dr Med Arm Sling Adult,Arm sling for adults.,Not-Known,Unisex,MYR 27.50
+22,Dr Med Posture Corrective Control Support Mild L,Posture corrective support.,Not-Known,Unisex,MYR 110.80
+23,Kplass Knee Pain Relief Patch 2Sx12,Patch for knee pain relief.,Not-Known,Unisex,MYR 238.80
+24,Kplass Pain Relief Patch 2Sx12,Patch for general pain relief.,Not-Known,Unisex,MYR 202.80
+25,Salonpas Fda Large Plaster 3S,Large plaster for pain relief.,Not-Known,Unisex,MYR 17.82
+26,Optimum Nutrition Think Bar Lemon Delight 60G X 10PK,Nutritional bar with lemon flavor.,Not-Known,Unisex,MYR 129.00
+27,Optimum Nutrition Think Bar Chocolate Fudge 60G X 10PK,Nutritional bar with chocolate flavor.,Not-Known,Unisex,MYR 129.00
+28,Optimum Nutrition Serious Mass Choc 2.72Kg,Weight gainer supplement with chocolate flavor.,Dairy,Unisex,MYR 209.00
+29,Optimum Nutrition 100% Whey Gold Standard Choc 454G,Whey protein supplement with chocolate flavor.,Dairy,Unisex,MYR 119.00
+30,Optimum Nutrition Creatine 300G,Creatine supplement.,Not-Known,Unisex,MYR 129.00
+31,Cebion Immucombi Tablets 30S,Immune support tablets with vitamin C.,Not-Known,Unisex,MYR 63.80
+32,Neurobion Value Pack 60Sx2,Vitamin B complex supplement.,Not-Known,Unisex,MYR 95.90
+33,Solusolv Haemorrhoids Relief 40,Relief for hemorrhoids.,Not-Known,Unisex,MYR 51.00
+34,Solusolv Haemorrhoids Relief 40Sx2,Relief for hemorrhoids.,Not-Known,Unisex,MYR 82.50
+35,Clearogout 30Sx2 Free 15S,Relief for gout.,Not-Known,Unisex,MYR 56.00
+36,Sambucol Black Elderberry Original 120mlx2 Foc Gwp,Elderberry supplement.,Not-Known,Unisex,MYR 114.21
+37,Holistic Way Children'S Eye Lutein Gummy 90S,Eye health supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+38,Holistic Way Children'S Omega 3 Gummy 90S,Omega-3 supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+39,Holistic Way Children'S Calcium & D3 Gummy 90S,Calcium and vitamin D supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+40,Holistic Way Children'S Vitamin C & Zinc Gummy 90S,Vitamin C and zinc supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+41,Shooot 3In1 Condom 3Pcs,Condom with 3-in-1 features.,Not-Known,Unisex,MYR 6.84
+42,Shooot Ribbed Condom 3Pcs,Ribbed condom for enhanced pleasure.,Not-Known,Unisex,MYR 5.76
+43,Shooot Dotted Condom 3Pcs,Dotted condom for enhanced sensation.,Not-Known,Unisex,MYR 5.76
+44,Shooot Basic Condom 3Pcs,Basic condom for safe sex.,Not-Known,Unisex,MYR 4.14
+45,"Kinohimitsu Premium Abalone Gift Set (Abalone With Truffle 180G X 2'S, Abalone With Scallop 425G X 2’S, Bjow 425G X 1'S)",Premium abalone gift set.,Shellfish,Unisex,MYR 198.00
+46,BRAND'S® CNY Essence of Chicken with Cordycep Gift Pack 12 x 70g + 1 x 70g,Essence of chicken with cordyceps gift pack.,Not-Known,Unisex,MYR 81.80
+47,Nugevity Complete Plant-Based Protein 7 Sachets,Plant-based protein supplement.,Not-Known,Unisex,MYR 103.92
+48,Nugevity Complete Plant-Based Protein 681G,Plant-based protein supplement.,Not-Known,Unisex,MYR 215.92
+49,Vellgoood Flexi Goood Orange + Turmeric + Pomegranet 2G X 15 Sachets,Orange turmeric and pomegranate beverage mix.,Not-Known,Unisex,MYR 76.50
+50,Vellgoood Digex Goood Beverage Apple + Probiotic 2G X 15 Sachets,Apple-flavored beverage with probiotics.,Not-Known,Unisex,MYR 76.50
+51,Vellgoood Screen-I-Shield Lutein + Zexanthin 2G X 15 Sachtes,Lutein and zeaxanthin supplement.,Not-Known,Unisex,MYR 76.50
+52,Vellgoood Junior Optifriends Marigold + Vit A 2G X 15 Sachets,Marigold and vitamin A supplement for children.,Not-Known,Children,MYR 63.75
+53,Vellgoood Junior Kold-Kare Vit C + Elderberry 20G X 15 Sachets,Vitamin C and elderberry supplement for children.,Not-Known,Children,MYR 63.75
+54,Vellgoood Junior Respiragoood Vit C + Tiger Mushroom 2G X 15 Sachets,Vitamin C and tiger mushroom supplement for children.,Not-Known,Children,MYR 63.75
+55,Holistic Way Multi Vitamins Gummies 60S,Multi-vitamin gummies for adults.,Not-Known,Unisex,MYR 92.65
+56,Holistic Way Vitamin D3 400Iu Gummies 60S,Vitamin D3 supplement in gummy form.,Not-Known,Unisex,MYR 92.65
+57,Holistic Way Elderbery Immune Gummies 60S,Elderberry immune support gummies.,Not-Known,Unisex,MYR 92.65
+58,Holistic Way Collagen Radiant Gummies 60S,Collagen supplement in gummy form.,Not-Known,Unisex,MYR 109.00
+59,Optimum Nutrition Creatine 300G,Creatine supplement.,Not-Known,Unisex,MYR 129.00
+60,Cebion Immucombi Tablets 30S,Immune support tablets with vitamin C.,Not-Known,Unisex,MYR 63.80
+61,Neurobion Value Pack 60Sx2,Vitamin B complex supplement.,Not-Known,Unisex,MYR 95.90
+62,Solusolv Haemorrhoids Relief 40,Relief for hemorrhoids.,Not-Known,Unisex,MYR 51.00
+63,Solusolv Haemorrhoids Relief 40Sx2,Relief for hemorrhoids.,Not-Known,Unisex,MYR 82.50
+64,Clearogout 30Sx2 Free 15S,Relief for gout.,Not-Known,Unisex,MYR 56.00
+65,Sambucol Black Elderberry Original 120mlx2 Foc Gwp,Elderberry supplement.,Not-Known,Unisex,MYR 114.21
+66,Holistic Way Children'S Eye Lutein Gummy 90S,Eye health supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+67,Holistic Way Children'S Omega 3 Gummy 90S,Omega-3 supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+68,Holistic Way Children'S Calcium & D3 Gummy 90S,Calcium and vitamin D supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+69,Holistic Way Children'S Vitamin C & Zinc Gummy 90S,Vitamin C and zinc supplement for children in gummy form.,Not-Known,Children,MYR 92.65
+70,Shooot 3In1 Condom 3Pcs,Condom with 3-in-1 features.,Not-Known,Unisex,MYR 6.84
+71,Shooot Ribbed Condom 3Pcs,Ribbed condom for enhanced pleasure.,Not-Known,Unisex,MYR 5.76
+72,Shooot Dotted Condom 3Pcs,Dotted condom for enhanced sensation.,Not-Known,Unisex,MYR 5.76
+73,Shooot Basic Condom 3Pcs,Basic condom for safe sex.,Not-Known,Unisex,MYR 4.14
+74,"Kinohimitsu Premium Abalone Gift Set (Abalone With Truffle 180G X 2'S, Abalone With Scallop 425G X 2’S, Bjow 425G X 1'S)",Premium abalone gift set.,Shellfish,Unisex,MYR 198.00
+75,BRAND'S® CNY Essence of Chicken with Cordycep Gift Pack 12 x 70g + 1 x 70g,Essence of chicken with cordyceps gift pack.,Not-Known,Unisex,MYR 81.80
+76,Nugevity Complete Plant-Based Protein 7 Sachets,Plant-based protein supplement.,Not-Known,Unisex,MYR 103.92
+77,Nugevity Complete Plant-Based Protein 681G,Plant-based protein supplement.,Not-Known,Unisex,MYR 215.92
+78,Vellgoood Flexi Goood Orange + Turmeric + Pomegranet 2G X 15 Sachets,Orange turmeric and pomegranate beverage mix.,Not-Known,Unisex,MYR 76.50
+79,Vellgoood Digex Goood Beverage Apple + Probiotic 2G X 15 Sachets,Apple-flavored beverage with probiotics.,Not-Known,Unisex,MYR 76.50
+80,Vellgoood Screen-I-Shield Lutein + Zexanthin 2G X 15 Sachets,Lutein and zeaxanthynot-Known,Unisex,MYR 76.50
+81,Vellgoood Junior Optifriends Marigold + Vit A 2G X 15 Sachets,Marigold and vitamin A supplement for children.,Not-Known,Children,MYR 63.75
+82,Vellgoood Junior Kold-Kare Vit C + Elderberry 20G X 15 Sachets,Vitamin C and elderberry supplement for children.,Not-Known,Children,MYR 63.75
+83,Vellgoood Junior Respiragoood Vit C + Tiger Mushroom 2G X 15 Sachets,Vitamin C and tiger mushroom supplement for children.,Not-Known,Children,MYR 63.75
+84,Holistic Way Multi Vitamins Gummies 60S,Multi-vitamin gummies for adults.,Not-Known,Unisex,MYR 92.65
+85,Holistic Way Vitamin D3 400Iu Gummies 60S,Vitamin D3 supplement in gummy form.,Not-Known,Unisex,MYR 92.65
+86,Holistic Way Elderbery Immune Gummies 60S,Elderberry immune support gummies.,Not-Known,Unisex,MYR 92.65
+87,Holistic Way Collagen Radiant Gummies 60S,Collagen supplement in gummy form.,Not-Known,Unisex,MYR 109.00
+88,Holistic Way Apple Cider Vinegar Gummies 60S,Apple cider vinegar supplement in gummy form.,Not-Known,Unisex,MYR 92.65
+89,Dr. Scholl'S Pain Relief Orthotics For Knee Pain Men Sizes 8-14 2S,Orthotic insoles for knee pain relief (for men).,Not-Known,Male,MYR 116.91
+90,Vitahealth Livo Tonic 90S,Liver tonic supplement.,Not-Known,Unisex,MYR 112.42
+91,Vitahealth Eye-Care 90S,Eye health supplement.,Not-Known,Unisex,MYR 126.75
+92,"Vitahealth Omega 3,6,9 150S",Omega 3 6 9 supplement.,Not-Known,Unisex,MYR 110.92
+93,Contour Plus Elite Blood Glucose Monitoring + 25 Strips,Blood glucose monitoring device with 25 strips.,Not-Known,Unisex,MYR 90.00
+94,Waitemata Manuka Honey Umf 15+ 250G,Manuka honey with UMF 15+ rating.,Not-Known,Unisex,MYR 203.15
+95,Live-Well Mecomin 90S,Vitamin B supplement.,Not-Known,Unisex,MYR 54.75
+96,Kinohimitsu Beauty Special Box Set 2,Beauty supplement box set.,Not-Known,Unisex,MYR 139.00
+97,Kinohimitsu D'tox Tea Peppermint 2gx60's,Peppermint detox tea.,Not-Known,Unisex,MYR 49.90
+98,Tiger Balm Plaster Warm 2s S,Warm tiger balm plaster (small).,Not-Known,Unisex,MYR 4.42
+99,Counterpain 60g,Pain relief cream.,Not-Known,Unisex,MYR 15.12
+100,BiO-LiFE AB Junior Pre & Pro 50s,Probiotic supplement for children.,Not-Known,Children,MYR 132.00
+101,Hudson's Eumenthol Jujubes 50g Classic,Eucalyptus jujubes.,Not-Known,Unisex,MYR 9.45
+102,Kinohimitsu J'pan D'tox Plum 6s + D'tox Tea Peppermint 14s,Plum detox drink with peppermint tea.,Not-Known,Unisex,MYR 58.90
+103,Royal Bird Nest With Collagen 75ml x 6s,Bird nest drink with collagen.,Not-Known,Unisex,MYR 36.00
+104,Nixoderm Ointment 5.34g,Ointment for skin conditions.,Not-Known,Unisex,MYR 8.50
+105,Salonpas Patch 20 x10s,Pain relief patches.,Not-Known,Unisex,MYR 123.50
+106,Hurix's Cream For Mouth Ulcer 5g,Cream for mouth ulcers.,Not-Known,Unisex,MYR 14.31
+107,Nixoderm Ointment 17.7g,Ointment for skin conditions.,Not-Known,Unisex,MYR 15.75
+108,Bausch + Lomb Renu Sensitive Multi-Purpose Solution 355mlx2,Contact lens solution.,Not-Known,Unisex,MYR 35.91
+109,Durex Play 100ml,Personal lubricant.,Not-Known,Unisex,MYR 22.32
+110,Tiger Balm Mosquito Repellent Patch 10s,Mosquito repellent patches.,Not-Known,Unisex,MYR 15.21
+111,Microlife Non-Contact Forehead Thermometer FR1DZ1,Non-contact thermometer.,Not-Known,Unisex,MYR 199.00
+112,Dettol Personal Care Wipes Sensitive 10's Pack Of 3,Personal care wipes.,Not-Known,Unisex,MYR 10.80
+113,Perskindol Classic Spray 150ml,Pain relief spray.,Not-Known,Unisex,MYR 25.91
+114,Tiger balm 4g,Topical ointment for pain relief.,Not-Known,Unisex,MYR 2.55
+115,Durex Love Condom 3's,Condoms (love),Latex,Unisex,MYR 7.80
+116,Tiger Balm Plaster Cool 2s S,Cool tiger balm plaster (small).,Not-Known,Unisex,MYR 4.25
+117,ALCON OPTI-FREE Pure Moist 90ml,Contact lens solution.,Not-Known,Unisex,MYR 13.99
+118,Benourish Elderflora Black Elderberry Extract 15S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
+119,Benourish Elderimuno Black Elderberry Extract 20S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
+120,Benourish Eldervisio Black Elderberry Extract 20S + 2S,Black elderberry extract supplement.,Not-Known,Unisex,MYR 75.65
+121,Guardian Crepe Elastic Bandage 7.5Cm,Elastic bandage.,Not-Known,Unisex,MYR 6.50
+122,Guardian Crepeelastic Bandage 5Cm,Elastic bandage.,Not-Known,Unisex,MYR 4.90
+123,SCOTT'S Vitamin C Pastilles Mango 50S For Kids,Mango-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 18.90
+124,Strepsils Chesty Cough 8's,Cough relief lozenges.,Not-Known,Unisex,MYR 7.65
+125,Durex Extra Safe Condom 12's,Condoms (extra safe),Latex,Unisex,MYR 43.20
+126,Durex Fetherlite Condom 12's,Condoms (fetherlite),Latex,Unisex,MYR 43.20
+127,Flavettes Vitamin C Blackcurrant 250mg 60 Tablets,Blackcurrant-flavored vitamin C tablets.,Not-Known,Unisex,MYR 17.40
+128,Appeton Multivitamin Lysine 60's,Multivitamin supplement.,Not-Known,Unisex,MYR 55.89
+129,Appeton A-Z Kid's Vitamin C 30mg Orange 100's,Orange-flavored vitamin C tablets for kids.,Not-Known,Children,MYR 29.88
+130,BiO-LiFE Astaxanthin 6mg 30'S,Astaxanthin supplement.,Not-Known,Unisex,MYR 84.50
+131,SCOTT'S Vitamin C Pastilles Orange 15S For Kids,Orange-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
+132,SCOTT'S Vitamin C Pastilles Peach 15S For Kids,Peach-flavored vitamin C pastilles for kids.,Not-Known,Children,MYR 5.40
+133,Appeton Active-C 100mg Orange 60's,Orange-flavored vitamin C tablets.,Not-Known,Unisex,MYR 35.73
+134,Guardian Ovulation Test 5's (Us),Ovulation test kit.,Not-Known,Unisex,MYR 30.60
+135,Appeton Multivitamin Lysine Syrup 120ml,Multivitamin syrup with lysine.,Not-Known,Unisex,MYR 53.77
+136,Strepsils Max 16s,Sore throat relief lozenges.,Not-Known,Unisex,MYR 11.90
+137,Hurix's Phlegm & Cough Herbs Capsule 12X6's,Cough relief capsules.,Not-Known,Unisex,MYR 85.30
+138,GoodMorning Vplus 18 Grains 1kg,Multigrain beverage mix.,Not-Known,Unisex,MYR 69.90

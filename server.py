@@ -39,6 +39,7 @@ async def get_products():
         database=database,
     )
     results = client.get_products()
+    print(results)
     return results
 
 
@@ -57,7 +58,6 @@ async def add_product(
         database=database,
     )
     prod_data = await request.json()
-    print(prod_data)
     name = prod_data["name"]
     description = prod_data["description"]
     price = prod_data["price"]
@@ -66,6 +66,38 @@ async def add_product(
     embeddings = get_embeddings(description)
     result = client.add_product(
         name=name, description=description, price=price, allergens=allergens, gender=gender, embeddings=embeddings
+    )
+    result_arr = []
+    for result in result.records:
+        result_arr.append(result.data())
+    return result_arr
+
+
+@app.post("/api/v1/products/edit")
+async def edit_product(
+    request: Request
+):
+    username = os.getenv("NEO4J_USERNAME")
+    password = os.getenv("NEO4J_PASS")
+    uri = os.getenv("NEO4J_URI")
+    database = os.getenv("NEO4J_DB")
+    client = Neo4jClient(
+        uri=uri,
+        username=username,
+        password=password,
+        database=database,
+        )
+    prod_data = await request.json()
+    print(prod_data)
+    id = prod_data["id"]
+    name = prod_data["name"]
+    description = prod_data["description"]
+    price = prod_data["price"]
+    allergens = prod_data["allergens"]
+    gender = prod_data["gender"]
+    embeddings = get_embeddings(description)
+    result = client.edit_product(
+        id=id, name=name, description=description, price=price, allergens=allergens, gender=gender, embeddings=embeddings
     )
     result_arr = []
     for result in result.records:
