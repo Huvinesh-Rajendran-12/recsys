@@ -20,7 +20,8 @@ model = SentenceTransformer("mixedbread-ai/mxbai-embed-large-v1")
 
 # define the get embeddings function
 def get_embeddings(text):
-    return model.encode([text])
+    embeddings = model.encode([text])
+    return embeddings[0].tolist()
 
 
 def get_product_recommendations(

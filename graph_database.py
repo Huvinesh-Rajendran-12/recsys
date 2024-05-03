@@ -21,9 +21,11 @@ class Neo4jClient:
 
     def get_products(self):
         result = self.driver.execute_query(
-                """MATCH (p:Product), (p)-->(a:Allergens), (p)-->(g:Gender)
+                """
+                MATCH (p:Product), (p)-->(a:Allergens), (p)-->(g:Gender)
                 RETURN distinct p.id as id, p.name as name,p.description as description,p.price as
-                price, a.type as allergens, g.type as gender order by p.id DESC""",
+                price, a.type as allergens, g.type as gender order by p.id DESC
+                """,
             database_=self.database,
         )
         result_arr = []
@@ -40,23 +42,27 @@ class Neo4jClient:
         index_vector: str = "product_text_embeddings",
     ):
         if allergens == "Not-Known":
-            query = """CALL db.index.vector.queryNodes('product_text_embeddings',
-             $limit, $queryVector)
+            query = """
+            CALL db.index.vector.queryNodes('product_text_embeddings',
+            $limit, $queryVector)
             YIELD node AS product, score
             WHERE score > 0.65
             MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
             (product)-[:GENDER]->(g:Gender)
             where (g.type = $gender or g.type = "Unisex")
-            RETURN distinct product.id as id, product.name as name,product.description as description,product.price as price, score"""
+            RETURN distinct product.id as id, product.name as name,product.description as description,product.price as price, score
+            """
         else:
-            query = """CALL db.index.vector.queryNodes('product_text_embeddings',
+            query = """
+            CALL db.index.vector.queryNodes('product_text_embeddings',
              $limit, $queryVector)
             YIELD node AS product, score
             WHERE score > 0.65
             MATCH(product)-[:HAS_ALLERGY]->(a:Allergens),
             (product)-[:GENDER]->(g:Gender)
             where a.type <> $allergens and (g.type = $gender or g.type = "Unisex")
-            RETURN product.name as name,product.description as description,product.price as price, score"""
+            RETURN product.name as name,product.description as description,product.price as price, score
+            """
         result = self.driver.execute_query(
             query,
             index_vector_name=index_vector,

@@ -17,32 +17,6 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/api/v1/medicine/recommendations")
-async def recommendations(query: str, userId: int, limit: int):
-    (gender, date_of_birth, allergy) = get_user_data(userId)
-    results = get_product_recommendations(
-        query=query, limit=limit, allergens=allergy, gender=gender
-    )
-    return results
-
-
-@app.get("/api/v1/products")
-async def get_products():
-    username = os.getenv("NEO4J_USERNAME")
-    password = os.getenv("NEO4J_PASS")
-    uri = os.getenv("NEO4J_URI")
-    database = os.getenv("NEO4J_DB")
-    client = Neo4jClient(
-        uri=uri,
-        username=username,
-        password=password,
-        database=database,
-    )
-    results = client.get_products()
-    print(results)
-    return results
-
-
 @app.post("/api/v1/products/add")
 async def add_product(
     request: Request
@@ -71,6 +45,18 @@ async def add_product(
     for result in result.records:
         result_arr.append(result.data())
     return result_arr
+
+
+@app.get("/api/v1/generate/embeddings")
+async def generate_embeddings(request: Request):
+    text = request.query_params.get("text")
+    if text is None:
+        return {"error": "Missing 'text' parameter"}
+    embeddings = get_embeddings(text)
+    # Make sure embeddings is a sequence (e.g., a list)
+    if not isinstance(embeddings, (list, tuple)):
+        return {"error": "Invalid embeddings format"}
+    return {"embeddings": embeddings}
 
 
 @app.post("/api/v1/products/edit")
