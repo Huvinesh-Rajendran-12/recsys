@@ -3,9 +3,7 @@ from dotenv import load_dotenv
 from fastapi.requests import Request
 import uvicorn
 from fastapi import FastAPI
-from model import get_product_recommendations, get_embeddings
-from database import get_user_data
-from graph_database import Neo4jClient
+from app.graph_database import Neo4jClient
 
 load_dotenv()
 
@@ -18,9 +16,7 @@ async def root():
 
 
 @app.post("/api/v1/products/add")
-async def add_product(
-    request: Request
-):
+async def add_product(request: Request):
     username = os.getenv("NEO4J_USERNAME")
     password = os.getenv("NEO4J_PASS")
     uri = os.getenv("NEO4J_URI")
@@ -39,7 +35,12 @@ async def add_product(
     gender = prod_data["gender"]
     embeddings = get_embeddings(description)
     result = client.add_product(
-        name=name, description=description, price=price, allergens=allergens, gender=gender, embeddings=embeddings
+        name=name,
+        description=description,
+        price=price,
+        allergens=allergens,
+        gender=gender,
+        embeddings=embeddings,
     )
     result_arr = []
     for result in result.records:
@@ -60,9 +61,7 @@ async def generate_embeddings(request: Request):
 
 
 @app.post("/api/v1/products/edit")
-async def edit_product(
-    request: Request
-):
+async def edit_product(request: Request):
     username = os.getenv("NEO4J_USERNAME")
     password = os.getenv("NEO4J_PASS")
     uri = os.getenv("NEO4J_URI")
@@ -72,7 +71,7 @@ async def edit_product(
         username=username,
         password=password,
         database=database,
-        )
+    )
     prod_data = await request.json()
     print(prod_data)
     id = prod_data["id"]
@@ -83,12 +82,19 @@ async def edit_product(
     gender = prod_data["gender"]
     embeddings = get_embeddings(description)
     result = client.edit_product(
-        id=id, name=name, description=description, price=price, allergens=allergens, gender=gender, embeddings=embeddings
+        id=id,
+        name=name,
+        description=description,
+        price=price,
+        allergens=allergens,
+        gender=gender,
+        embeddings=embeddings,
     )
     result_arr = []
     for result in result.records:
         result_arr.append(result.data())
     return result_arr
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=1337, reload=True)
