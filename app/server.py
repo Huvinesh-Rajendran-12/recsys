@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from fastapi.requests import Request
 import uvicorn
 from fastapi import FastAPI
+from app.model import get_embeddings
 from app.graph_database import Neo4jClient
 
 load_dotenv()
