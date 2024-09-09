@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer
-from graph_database import Neo4jClient
+from app.graph_database import Neo4jClient
 import numpy as np
 from dotenv import load_dotenv
 import os
@@ -15,7 +15,7 @@ client = Neo4jClient(uri, username, password, database)
 
 embedding_model_path = os.environ.get("EMBEDDING_MODEL_PATH", None)
 
-model = SentenceTransformer("mixedbread-ai/mxbai-embed-large-v1")
+model = SentenceTransformer("mixedbread-ai/mxbai-embed-large-v1", truncate_dim=1024)
 
 
 # define the get embeddings function
